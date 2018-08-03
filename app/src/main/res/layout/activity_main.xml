@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="250dp"
+           android:background="@color/colorAccent"
+           ></LinearLayout>
+   </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:layout_width="350dp"
+            android:layout_height="400dp"
+            app:cardCornerRadius="10dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:elevation="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:textSize="10sp"
+                        android:id="@+id/id_sign_in_text_or_email"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorLightBlue"
+                        android:textAllCaps="true"
+                        />
+
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:text="Gmail"
+                    android:textStyle="italic"
+                    android:id="@+id/id_gmail_sign_in_btn"
+                    android:background="@color/colorLightBlue" />
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="italic"
+                    android:text="Sign Out"
+                    android:textColor="@color/colorLightBlue"
+                    android:id="@+id/id_signOut_btn"
+                    android:background="@color/colorLightRed" />
+                <!--<Button
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:text="Twitter"
+                    android:textStyle="italic"
+                    android:id="@+id/id_twitter_sign_in_btn"
+                    android:background="@color/colorLightBlue" />
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="italic"
+                    android:text="Phone"
+                    android:id="@+id/id_phone_sign_in_btn"
+                    android:background="@color/colorLightBlue" />
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:text="Any"
+                    android:textStyle="italic"
+                    android:id="@+id/id_any_sign_in_btn"
+                    android:background="@color/colorLightBlue" />
+                -->
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</FrameLayout>
